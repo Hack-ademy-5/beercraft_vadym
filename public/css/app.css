@@ -1,0 +1,32 @@
+:root {
+    --main-color: #3805F2;
+    --text-color: #606060;
+    --accent-color: #8350F2;
+    --mainbc-color: #F2F2F2;
+    --color3: #F28C0F;
+    --color4: #D9A404;
+    
+
+}
+
+.text-main {
+    color: var(--text-color);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.color-text3 {
+    color: var(--color3);
+}
+
+.color-text4 {
+    color: var(--color4);
+}
+
+
+body {
+    
+    background-color: var(--color3);
+}
