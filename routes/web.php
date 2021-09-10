@@ -22,5 +22,6 @@ Route::get('/crearCerveceria', [BreweryController::class,'crearCerveceria'])->na
 
 Route::post('/cervecerias', [BreweryController::class,'guardarFormulario'])->name('guardarFormulario'); //Formulario
 
+Route::get('/cervezas', [BreweryController::class,'paginaCervezas'])->name('paginaCervezas');
 
   

@@ -2,7 +2,7 @@
 @section('content')
   <h1>Home</h1>
 
-  <title>Live Coding 27th July</title>
+
 
 </head>
 
@@ -20,9 +20,7 @@
         </p>
         <button class="btn-head px-4 py-2">para buscar</button>
       </div>
-      <div class="col-12 col-md-6">
-        <img src="./images/img-gackdound-home-400x414px.png" class="d-block mx-auto" alt="">
-      </div>
+     
     </div>
   </div>
 
@@ -37,7 +35,7 @@
           pariatur.</p>
       </div>
       <div class="col-12 col-md-6 text-center">
-        <img class="tarjetacredito d-block mx-auto" src="/imagenes /cerveceria.jpg"
+        <img class="tarjetacredito d-block mx-auto" src="/imagenes/cerveceria.jpg"
           alt="Imagen de una tarjeta">
       </div>
     </div>
@@ -74,10 +72,6 @@
           </div>
       </div>
   </div>
-
-
-
-
 
 @endsection
 

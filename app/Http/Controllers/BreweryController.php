@@ -7,14 +7,14 @@ use Illuminate\Support\Facades\View;
 class BreweryController extends Controller {
 
     //Para visualizar la tarjeta creada a traves del formulario
-     public function __construct() {
+    public function __construct() {
 
-       View::share('breweries', Brewery::all());
-    }
+        View::share('breweries', Brewery::all());
+     }
 
-    public function crearCerveceria() {
+     public function home() {
             
-        return view('crearCerveceria');
+        return view('home');
     }
 
     public function cervecerias() {
@@ -22,15 +22,18 @@ class BreweryController extends Controller {
         return view('cervecerias');
     }
 
-      
-    public function home() {
+    public function paginaCervezas() {
             
-        return view('home');
+        return view('paginaCervezas');
     }
+ 
+     public function crearCerveceria() {
+             
+         return view('crearCerveceria');
+     }
 
-    public function guardarFormulario(Request $request) {      //Funcion para 
+    public function guardarFormulario(Request $request) {      
 
-    
         //Validacion con los requerimientos para cada campo
 
         $misdatos = $request->validate([
@@ -56,7 +59,7 @@ class BreweryController extends Controller {
 
         
         // Al completar satisfactoriamente el formulario nos redirige al la "home" con el mensaje "La cerveceria se ha añadido correctamente"
-        return redirect()->route('home')->with('message',"La cerveceria se ha añadido correctamente");
+        return redirect()->route('cervecerias')->with('message',"La cerveceria se ha añadido correctamente");
     
 
 
